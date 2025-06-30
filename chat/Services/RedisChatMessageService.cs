@@ -33,7 +33,7 @@ public class RedisChatMessageService : IChatMessageService
         try
         {
           
-            var cachedHistory = await _cache.GetStringAsync($"Чат:{chatRoom}:История");
+            var cachedHistory = await _cache.GetStringAsync($"Чат:{chatRoom}:история");
             
             if (string.IsNullOrEmpty(cachedHistory))
             {
